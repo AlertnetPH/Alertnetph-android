@@ -12,7 +12,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class SplashActivity extends AppCompatActivity {
 
-    private static final int SPLASH_DISPLAY_LENGTH = 1024;
+    private static final int SPLASH_DISPLAY_DELAY_MILLIS = 1500;
     Handler handler = new Handler();
 
     @Override
@@ -24,6 +24,6 @@ public class SplashActivity extends AppCompatActivity {
             Intent splash = new Intent(SplashActivity.this, MainActivity.class);
             startActivity(splash);
             finish();
-        }, SPLASH_DISPLAY_LENGTH);
+        }, SPLASH_DISPLAY_DELAY_MILLIS);
     }
 }
